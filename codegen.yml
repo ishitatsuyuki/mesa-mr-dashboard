@@ -1,0 +1,11 @@
+schema: './schema.graphql'
+documents: './src/**/*.graphql'
+generates:
+  ./src/graphql-operations.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typed-document-node
+config:
+  namingConvention:
+    enumValues: keep
