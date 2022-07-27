@@ -1,4 +1,4 @@
-import { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/core'
+import { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/core';
 export type Maybe<T> = T | null;
 export type InputMaybe<T> = Maybe<T>;
 export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
@@ -561,6 +561,7 @@ export type AlertManagementAlert = NoteableInterface & Todoable & {
   webUrl: Scalars['String'];
 };
 
+
 /** Describes an alert from the project's Alert Management */
 export type AlertManagementAlertAssigneesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -568,6 +569,7 @@ export type AlertManagementAlertAssigneesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** Describes an alert from the project's Alert Management */
 export type AlertManagementAlertDiscussionsArgs = {
@@ -577,6 +579,7 @@ export type AlertManagementAlertDiscussionsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 /** Describes an alert from the project's Alert Management */
 export type AlertManagementAlertNotesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -584,6 +587,7 @@ export type AlertManagementAlertNotesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** Describes an alert from the project's Alert Management */
 export type AlertManagementAlertTodosArgs = {
@@ -1096,6 +1100,7 @@ export type Board = {
   webUrl: Scalars['String'];
 };
 
+
 /** Represents a project or group issue board */
 export type BoardListsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -1175,6 +1180,7 @@ export type BoardList = {
   /** Title of the list. */
   title: Scalars['String'];
 };
+
 
 /** Represents a list for an issue board */
 export type BoardListIssuesArgs = {
@@ -1309,6 +1315,7 @@ export type CiConfig = {
   warnings?: Maybe<Array<Scalars['String']>>;
 };
 
+
 export type CiConfigStagesArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -1325,6 +1332,7 @@ export type CiConfigGroup = {
   /** Size of the job group. */
   size?: Maybe<Scalars['Int']>;
 };
+
 
 export type CiConfigGroupJobsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -1413,6 +1421,7 @@ export type CiConfigJob = {
   when?: Maybe<Scalars['String']>;
 };
 
+
 export type CiConfigJobNeedsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -1480,6 +1489,7 @@ export type CiConfigStage = {
   name?: Maybe<Scalars['String']>;
 };
 
+
 export type CiConfigStageGroupsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -1528,6 +1538,7 @@ export type CiGroup = {
   /** Size of the group. */
   size?: Maybe<Scalars['Int']>;
 };
+
 
 export type CiGroupJobsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -1630,6 +1641,7 @@ export type CiJob = {
   userPermissions: JobPermissions;
 };
 
+
 export type CiJobArtifactsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -1637,12 +1649,14 @@ export type CiJobArtifactsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 export type CiJobNeedsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type CiJobPreviousStageJobsOrNeedsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -1693,6 +1707,7 @@ export type CiJobConnection = {
   /** Information to aid in pagination. */
   pageInfo: PageInfo;
 };
+
 
 /** The connection type for CiJob. */
 export type CiJobConnectionCountArgs = {
@@ -1788,6 +1803,7 @@ export type CiJobTokenScopeType = {
   projects: ProjectConnection;
 };
 
+
 export type CiJobTokenScopeTypeProjectsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -1866,12 +1882,14 @@ export type CiRunner = {
   version?: Maybe<Scalars['String']>;
 };
 
+
 export type CiRunnerGroupsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type CiRunnerJobsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -1880,6 +1898,7 @@ export type CiRunnerJobsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   statuses?: InputMaybe<Array<CiJobStatus>>;
 };
+
 
 export type CiRunnerProjectsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -1983,12 +2002,14 @@ export type CiStage = {
   status?: Maybe<Scalars['String']>;
 };
 
+
 export type CiStageGroupsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type CiStageJobsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -2050,6 +2071,7 @@ export type ClusterAgent = {
   webPath?: Maybe<Scalars['String']>;
 };
 
+
 export type ClusterAgentActivityEventsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -2057,12 +2079,14 @@ export type ClusterAgentActivityEventsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 export type ClusterAgentConnectionsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type ClusterAgentTokensArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -2272,6 +2296,7 @@ export type Commit = Todoable & {
   /** Web URL of the commit. */
   webUrl: Scalars['String'];
 };
+
 
 export type CommitPipelinesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -2685,6 +2710,7 @@ export type ContainerRepositoryDetails = {
   updatedAt: Scalars['Time'];
 };
 
+
 /** Details of a container repository */
 export type ContainerRepositoryDetailsTagsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -3086,6 +3112,7 @@ export type CurrentUserTodos = {
   currentUserTodos: TodoConnection;
 };
 
+
 export type CurrentUserTodosCurrentUserTodosArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -3477,6 +3504,7 @@ export type Design = CurrentUserTodos & DesignFields & NoteableInterface & Todoa
   webUrl: Scalars['String'];
 };
 
+
 /** A single design */
 export type DesignCurrentUserTodosArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -3486,6 +3514,7 @@ export type DesignCurrentUserTodosArgs = {
   state?: InputMaybe<TodoStateEnum>;
 };
 
+
 /** A single design */
 export type DesignDiscussionsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -3494,6 +3523,7 @@ export type DesignDiscussionsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 /** A single design */
 export type DesignNotesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -3501,6 +3531,7 @@ export type DesignNotesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** A single design */
 export type DesignVersionsArgs = {
@@ -3582,16 +3613,19 @@ export type DesignCollection = {
   versions: DesignVersionConnection;
 };
 
+
 /** A collection of designs */
 export type DesignCollectionDesignArgs = {
   filename?: InputMaybe<Scalars['String']>;
   id?: InputMaybe<Scalars['DesignManagementDesignID']>;
 };
 
+
 /** A collection of designs */
 export type DesignCollectionDesignAtVersionArgs = {
   id: Scalars['DesignManagementDesignAtVersionID'];
 };
+
 
 /** A collection of designs */
 export type DesignCollectionDesignsArgs = {
@@ -3604,11 +3638,13 @@ export type DesignCollectionDesignsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 /** A collection of designs */
 export type DesignCollectionVersionArgs = {
   id?: InputMaybe<Scalars['DesignManagementVersionID']>;
   sha?: InputMaybe<Scalars['String']>;
 };
+
 
 /** A collection of designs */
 export type DesignCollectionVersionsArgs = {
@@ -3681,9 +3717,11 @@ export type DesignManagement = {
   version?: Maybe<DesignVersion>;
 };
 
+
 export type DesignManagementDesignAtVersionArgs = {
   id: Scalars['DesignManagementDesignAtVersionID'];
 };
+
 
 export type DesignManagementVersionArgs = {
   id: Scalars['DesignManagementVersionID'];
@@ -3779,12 +3817,14 @@ export type DesignVersion = {
   sha: Scalars['ID'];
 };
 
+
 /** A specific version in which designs were added, modified or deleted */
 export type DesignVersionDesignAtVersionArgs = {
   designId?: InputMaybe<Scalars['DesignManagementDesignID']>;
   filename?: InputMaybe<Scalars['String']>;
   id?: InputMaybe<Scalars['DesignManagementDesignAtVersionID']>;
 };
+
 
 /** A specific version in which designs were added, modified or deleted */
 export type DesignVersionDesignsArgs = {
@@ -3793,6 +3833,7 @@ export type DesignVersionDesignsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** A specific version in which designs were added, modified or deleted */
 export type DesignVersionDesignsAtVersionArgs = {
@@ -4160,6 +4201,7 @@ export type Discussion = ResolvableInterface & {
   resolvedBy?: Maybe<UserCore>;
 };
 
+
 export type DiscussionNotesArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -4270,6 +4312,7 @@ export type Environment = {
   /** State of the environment, for example: available/stopped. */
   state: Scalars['String'];
 };
+
 
 /** Describes where code is deployed for a project */
 export type EnvironmentMetricsDashboardArgs = {
@@ -4439,9 +4482,11 @@ export type Group = {
   workItemTypes?: Maybe<WorkItemTypeConnection>;
 };
 
+
 export type GroupBoardArgs = {
   id: Scalars['BoardID'];
 };
+
 
 export type GroupBoardsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -4450,6 +4495,7 @@ export type GroupBoardsArgs = {
   id?: InputMaybe<Scalars['BoardID']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type GroupContactsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -4461,6 +4507,7 @@ export type GroupContactsArgs = {
   state?: InputMaybe<CustomerRelationsContactState>;
 };
 
+
 export type GroupContainerRepositoriesArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -4470,6 +4517,7 @@ export type GroupContainerRepositoriesArgs = {
   sort?: InputMaybe<ContainerRepositorySort>;
 };
 
+
 export type GroupDependencyProxyBlobsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -4477,12 +4525,14 @@ export type GroupDependencyProxyBlobsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 export type GroupDependencyProxyManifestsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type GroupDescendantGroupsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -4494,6 +4544,7 @@ export type GroupDescendantGroupsArgs = {
   search?: InputMaybe<Scalars['String']>;
 };
 
+
 export type GroupGroupMembersArgs = {
   accessLevels?: InputMaybe<Array<AccessLevelEnum>>;
   after?: InputMaybe<Scalars['String']>;
@@ -4503,6 +4554,7 @@ export type GroupGroupMembersArgs = {
   relations?: InputMaybe<Array<GroupMemberRelation>>;
   search?: InputMaybe<Scalars['String']>;
 };
+
 
 export type GroupIssuesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -4536,9 +4588,11 @@ export type GroupIssuesArgs = {
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
 
+
 export type GroupLabelArgs = {
   title: Scalars['String'];
 };
+
 
 export type GroupLabelsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -4550,6 +4604,7 @@ export type GroupLabelsArgs = {
   onlyGroupLabels?: InputMaybe<Scalars['Boolean']>;
   searchTerm?: InputMaybe<Scalars['String']>;
 };
+
 
 export type GroupMergeRequestsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -4577,6 +4632,7 @@ export type GroupMergeRequestsArgs = {
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
 
+
 export type GroupMilestonesArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -4593,6 +4649,7 @@ export type GroupMilestonesArgs = {
   title?: InputMaybe<Scalars['String']>;
 };
 
+
 export type GroupOrganizationsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -4602,6 +4659,7 @@ export type GroupOrganizationsArgs = {
   search?: InputMaybe<Scalars['String']>;
   state?: InputMaybe<CustomerRelationsOrganizationState>;
 };
+
 
 export type GroupPackagesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -4615,6 +4673,7 @@ export type GroupPackagesArgs = {
   status?: InputMaybe<PackageStatus>;
 };
 
+
 export type GroupProjectsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -4626,12 +4685,14 @@ export type GroupProjectsArgs = {
   sort?: InputMaybe<NamespaceProjectSort>;
 };
 
+
 export type GroupRecentIssueBoardsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type GroupRunnersArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -4647,6 +4708,7 @@ export type GroupRunnersArgs = {
   type?: InputMaybe<CiRunnerType>;
 };
 
+
 export type GroupTimelogsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -4660,6 +4722,7 @@ export type GroupTimelogsArgs = {
   startTime?: InputMaybe<Scalars['Time']>;
   username?: InputMaybe<Scalars['String']>;
 };
+
 
 export type GroupWorkItemTypesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -4715,6 +4778,7 @@ export type GroupMember = MemberInterface & {
   /** Permissions for the current user on the resource */
   userPermissions: GroupPermissions;
 };
+
 
 /** Represents a Group Membership */
 export type GroupMemberMergeRequestInteractionArgs = {
@@ -5022,12 +5086,14 @@ export type Issue = CurrentUserTodos & NoteableInterface & Todoable & {
   webUrl: Scalars['String'];
 };
 
+
 export type IssueAssigneesArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type IssueCurrentUserTodosArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -5037,12 +5103,14 @@ export type IssueCurrentUserTodosArgs = {
   state?: InputMaybe<TodoStateEnum>;
 };
 
+
 export type IssueCustomerRelationsContactsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type IssueDiscussionsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -5051,12 +5119,14 @@ export type IssueDiscussionsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 export type IssueLabelsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type IssueNotesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -5065,6 +5135,7 @@ export type IssueNotesArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 export type IssueParticipantsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -5072,9 +5143,11 @@ export type IssueParticipantsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 export type IssueReferenceArgs = {
   full?: InputMaybe<Scalars['Boolean']>;
 };
+
 
 export type IssueTimelogsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -5619,6 +5692,7 @@ export type JiraService = Service & {
   type?: Maybe<Scalars['String']>;
 };
 
+
 export type JiraServiceProjectsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -5978,6 +6052,7 @@ export type MemberInterface = {
   user?: Maybe<UserCore>;
 };
 
+
 export type MemberInterfaceMergeRequestInteractionArgs = {
   id: Scalars['MergeRequestID'];
 };
@@ -6177,12 +6252,14 @@ export type MergeRequest = CurrentUserTodos & NoteableInterface & Todoable & {
   webUrl?: Maybe<Scalars['String']>;
 };
 
+
 export type MergeRequestApprovedByArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type MergeRequestAssigneesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6191,12 +6268,14 @@ export type MergeRequestAssigneesArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 export type MergeRequestCommitsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type MergeRequestCommitsWithoutMergeCommitsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6205,12 +6284,14 @@ export type MergeRequestCommitsWithoutMergeCommitsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 export type MergeRequestCommittersArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type MergeRequestCurrentUserTodosArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6220,9 +6301,11 @@ export type MergeRequestCurrentUserTodosArgs = {
   state?: InputMaybe<TodoStateEnum>;
 };
 
+
 export type MergeRequestDiffStatsArgs = {
   path?: InputMaybe<Scalars['String']>;
 };
+
 
 export type MergeRequestDiscussionsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6231,12 +6314,14 @@ export type MergeRequestDiscussionsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 export type MergeRequestLabelsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type MergeRequestNotesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6245,12 +6330,14 @@ export type MergeRequestNotesArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 export type MergeRequestParticipantsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type MergeRequestPipelinesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6267,9 +6354,11 @@ export type MergeRequestPipelinesArgs = {
   username?: InputMaybe<Scalars['String']>;
 };
 
+
 export type MergeRequestReferenceArgs = {
   full?: InputMaybe<Scalars['Boolean']>;
 };
+
 
 export type MergeRequestReviewersArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6277,6 +6366,7 @@ export type MergeRequestReviewersArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type MergeRequestTimelogsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6388,6 +6478,7 @@ export type MergeRequestAssignee = User & {
   webUrl: Scalars['String'];
 };
 
+
 /** A user assigned to a merge request. */
 export type MergeRequestAssigneeAssignedMergeRequestsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6414,6 +6505,7 @@ export type MergeRequestAssigneeAssignedMergeRequestsArgs = {
   updatedAfter?: InputMaybe<Scalars['Time']>;
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
+
 
 /** A user assigned to a merge request. */
 export type MergeRequestAssigneeAuthoredMergeRequestsArgs = {
@@ -6442,6 +6534,7 @@ export type MergeRequestAssigneeAuthoredMergeRequestsArgs = {
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
 
+
 /** A user assigned to a merge request. */
 export type MergeRequestAssigneeCalloutsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6450,6 +6543,7 @@ export type MergeRequestAssigneeCalloutsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 /** A user assigned to a merge request. */
 export type MergeRequestAssigneeGroupMembershipsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6457,6 +6551,7 @@ export type MergeRequestAssigneeGroupMembershipsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** A user assigned to a merge request. */
 export type MergeRequestAssigneeGroupsArgs = {
@@ -6468,6 +6563,7 @@ export type MergeRequestAssigneeGroupsArgs = {
   search?: InputMaybe<Scalars['String']>;
 };
 
+
 /** A user assigned to a merge request. */
 export type MergeRequestAssigneeProjectMembershipsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6475,6 +6571,7 @@ export type MergeRequestAssigneeProjectMembershipsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** A user assigned to a merge request. */
 export type MergeRequestAssigneeReviewRequestedMergeRequestsArgs = {
@@ -6503,6 +6600,7 @@ export type MergeRequestAssigneeReviewRequestedMergeRequestsArgs = {
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
 
+
 /** A user assigned to a merge request. */
 export type MergeRequestAssigneeSavedRepliesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6510,6 +6608,7 @@ export type MergeRequestAssigneeSavedRepliesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** A user assigned to a merge request. */
 export type MergeRequestAssigneeSnippetsArgs = {
@@ -6522,6 +6621,7 @@ export type MergeRequestAssigneeSnippetsArgs = {
   visibility?: InputMaybe<VisibilityScopesEnum>;
 };
 
+
 /** A user assigned to a merge request. */
 export type MergeRequestAssigneeStarredProjectsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6530,6 +6630,7 @@ export type MergeRequestAssigneeStarredProjectsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   search?: InputMaybe<Scalars['String']>;
 };
+
 
 /** A user assigned to a merge request. */
 export type MergeRequestAssigneeTimelogsArgs = {
@@ -6545,6 +6646,7 @@ export type MergeRequestAssigneeTimelogsArgs = {
   startTime?: InputMaybe<Scalars['Time']>;
   username?: InputMaybe<Scalars['String']>;
 };
+
 
 /** A user assigned to a merge request. */
 export type MergeRequestAssigneeTodosArgs = {
@@ -6650,6 +6752,7 @@ export type MergeRequestAuthor = User & {
   webUrl: Scalars['String'];
 };
 
+
 /** The author of the merge request. */
 export type MergeRequestAuthorAssignedMergeRequestsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6676,6 +6779,7 @@ export type MergeRequestAuthorAssignedMergeRequestsArgs = {
   updatedAfter?: InputMaybe<Scalars['Time']>;
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
+
 
 /** The author of the merge request. */
 export type MergeRequestAuthorAuthoredMergeRequestsArgs = {
@@ -6704,6 +6808,7 @@ export type MergeRequestAuthorAuthoredMergeRequestsArgs = {
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
 
+
 /** The author of the merge request. */
 export type MergeRequestAuthorCalloutsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6712,6 +6817,7 @@ export type MergeRequestAuthorCalloutsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 /** The author of the merge request. */
 export type MergeRequestAuthorGroupMembershipsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6719,6 +6825,7 @@ export type MergeRequestAuthorGroupMembershipsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** The author of the merge request. */
 export type MergeRequestAuthorGroupsArgs = {
@@ -6730,6 +6837,7 @@ export type MergeRequestAuthorGroupsArgs = {
   search?: InputMaybe<Scalars['String']>;
 };
 
+
 /** The author of the merge request. */
 export type MergeRequestAuthorProjectMembershipsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6737,6 +6845,7 @@ export type MergeRequestAuthorProjectMembershipsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** The author of the merge request. */
 export type MergeRequestAuthorReviewRequestedMergeRequestsArgs = {
@@ -6765,6 +6874,7 @@ export type MergeRequestAuthorReviewRequestedMergeRequestsArgs = {
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
 
+
 /** The author of the merge request. */
 export type MergeRequestAuthorSavedRepliesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6772,6 +6882,7 @@ export type MergeRequestAuthorSavedRepliesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** The author of the merge request. */
 export type MergeRequestAuthorSnippetsArgs = {
@@ -6784,6 +6895,7 @@ export type MergeRequestAuthorSnippetsArgs = {
   visibility?: InputMaybe<VisibilityScopesEnum>;
 };
 
+
 /** The author of the merge request. */
 export type MergeRequestAuthorStarredProjectsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6792,6 +6904,7 @@ export type MergeRequestAuthorStarredProjectsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   search?: InputMaybe<Scalars['String']>;
 };
+
 
 /** The author of the merge request. */
 export type MergeRequestAuthorTimelogsArgs = {
@@ -6807,6 +6920,7 @@ export type MergeRequestAuthorTimelogsArgs = {
   startTime?: InputMaybe<Scalars['Time']>;
   username?: InputMaybe<Scalars['String']>;
 };
+
 
 /** The author of the merge request. */
 export type MergeRequestAuthorTodosArgs = {
@@ -6953,6 +7067,7 @@ export type MergeRequestParticipant = User & {
   webUrl: Scalars['String'];
 };
 
+
 /** A user participating in a merge request. */
 export type MergeRequestParticipantAssignedMergeRequestsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -6979,6 +7094,7 @@ export type MergeRequestParticipantAssignedMergeRequestsArgs = {
   updatedAfter?: InputMaybe<Scalars['Time']>;
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
+
 
 /** A user participating in a merge request. */
 export type MergeRequestParticipantAuthoredMergeRequestsArgs = {
@@ -7007,6 +7123,7 @@ export type MergeRequestParticipantAuthoredMergeRequestsArgs = {
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
 
+
 /** A user participating in a merge request. */
 export type MergeRequestParticipantCalloutsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -7015,6 +7132,7 @@ export type MergeRequestParticipantCalloutsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 /** A user participating in a merge request. */
 export type MergeRequestParticipantGroupMembershipsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -7022,6 +7140,7 @@ export type MergeRequestParticipantGroupMembershipsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** A user participating in a merge request. */
 export type MergeRequestParticipantGroupsArgs = {
@@ -7033,6 +7152,7 @@ export type MergeRequestParticipantGroupsArgs = {
   search?: InputMaybe<Scalars['String']>;
 };
 
+
 /** A user participating in a merge request. */
 export type MergeRequestParticipantProjectMembershipsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -7040,6 +7160,7 @@ export type MergeRequestParticipantProjectMembershipsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** A user participating in a merge request. */
 export type MergeRequestParticipantReviewRequestedMergeRequestsArgs = {
@@ -7068,6 +7189,7 @@ export type MergeRequestParticipantReviewRequestedMergeRequestsArgs = {
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
 
+
 /** A user participating in a merge request. */
 export type MergeRequestParticipantSavedRepliesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -7075,6 +7197,7 @@ export type MergeRequestParticipantSavedRepliesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** A user participating in a merge request. */
 export type MergeRequestParticipantSnippetsArgs = {
@@ -7087,6 +7210,7 @@ export type MergeRequestParticipantSnippetsArgs = {
   visibility?: InputMaybe<VisibilityScopesEnum>;
 };
 
+
 /** A user participating in a merge request. */
 export type MergeRequestParticipantStarredProjectsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -7095,6 +7219,7 @@ export type MergeRequestParticipantStarredProjectsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   search?: InputMaybe<Scalars['String']>;
 };
+
 
 /** A user participating in a merge request. */
 export type MergeRequestParticipantTimelogsArgs = {
@@ -7110,6 +7235,7 @@ export type MergeRequestParticipantTimelogsArgs = {
   startTime?: InputMaybe<Scalars['Time']>;
   username?: InputMaybe<Scalars['String']>;
 };
+
 
 /** A user participating in a merge request. */
 export type MergeRequestParticipantTodosArgs = {
@@ -7294,6 +7420,7 @@ export type MergeRequestReviewer = User & {
   webUrl: Scalars['String'];
 };
 
+
 /** A user assigned to a merge request as a reviewer. */
 export type MergeRequestReviewerAssignedMergeRequestsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -7320,6 +7447,7 @@ export type MergeRequestReviewerAssignedMergeRequestsArgs = {
   updatedAfter?: InputMaybe<Scalars['Time']>;
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
+
 
 /** A user assigned to a merge request as a reviewer. */
 export type MergeRequestReviewerAuthoredMergeRequestsArgs = {
@@ -7348,6 +7476,7 @@ export type MergeRequestReviewerAuthoredMergeRequestsArgs = {
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
 
+
 /** A user assigned to a merge request as a reviewer. */
 export type MergeRequestReviewerCalloutsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -7356,6 +7485,7 @@ export type MergeRequestReviewerCalloutsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 /** A user assigned to a merge request as a reviewer. */
 export type MergeRequestReviewerGroupMembershipsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -7363,6 +7493,7 @@ export type MergeRequestReviewerGroupMembershipsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** A user assigned to a merge request as a reviewer. */
 export type MergeRequestReviewerGroupsArgs = {
@@ -7374,6 +7505,7 @@ export type MergeRequestReviewerGroupsArgs = {
   search?: InputMaybe<Scalars['String']>;
 };
 
+
 /** A user assigned to a merge request as a reviewer. */
 export type MergeRequestReviewerProjectMembershipsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -7381,6 +7513,7 @@ export type MergeRequestReviewerProjectMembershipsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** A user assigned to a merge request as a reviewer. */
 export type MergeRequestReviewerReviewRequestedMergeRequestsArgs = {
@@ -7409,6 +7542,7 @@ export type MergeRequestReviewerReviewRequestedMergeRequestsArgs = {
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
 
+
 /** A user assigned to a merge request as a reviewer. */
 export type MergeRequestReviewerSavedRepliesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -7416,6 +7550,7 @@ export type MergeRequestReviewerSavedRepliesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** A user assigned to a merge request as a reviewer. */
 export type MergeRequestReviewerSnippetsArgs = {
@@ -7428,6 +7563,7 @@ export type MergeRequestReviewerSnippetsArgs = {
   visibility?: InputMaybe<VisibilityScopesEnum>;
 };
 
+
 /** A user assigned to a merge request as a reviewer. */
 export type MergeRequestReviewerStarredProjectsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -7436,6 +7572,7 @@ export type MergeRequestReviewerStarredProjectsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   search?: InputMaybe<Scalars['String']>;
 };
+
 
 /** A user assigned to a merge request as a reviewer. */
 export type MergeRequestReviewerTimelogsArgs = {
@@ -7451,6 +7588,7 @@ export type MergeRequestReviewerTimelogsArgs = {
   startTime?: InputMaybe<Scalars['Time']>;
   username?: InputMaybe<Scalars['String']>;
 };
+
 
 /** A user assigned to a merge request as a reviewer. */
 export type MergeRequestReviewerTodosArgs = {
@@ -7819,6 +7957,7 @@ export type MetricsDashboard = {
   schemaValidationWarnings?: Maybe<Array<Scalars['String']>>;
 };
 
+
 export type MetricsDashboardAnnotationsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -7898,6 +8037,7 @@ export type Milestone = {
   /** Web path of the milestone. */
   webPath: Scalars['String'];
 };
+
 
 /** Represents a milestone */
 export type MilestoneReleasesArgs = {
@@ -8216,549 +8356,686 @@ export type Mutation = {
   workItemUpdateWidgets?: Maybe<WorkItemUpdateWidgetsPayload>;
 };
 
+
 export type MutationAdminSidekiqQueuesDeleteJobsArgs = {
   input: AdminSidekiqQueuesDeleteJobsInput;
 };
+
 
 export type MutationAlertSetAssigneesArgs = {
   input: AlertSetAssigneesInput;
 };
 
+
 export type MutationAlertTodoCreateArgs = {
   input: AlertTodoCreateInput;
 };
+
 
 export type MutationAwardEmojiAddArgs = {
   input: AwardEmojiAddInput;
 };
 
+
 export type MutationAwardEmojiRemoveArgs = {
   input: AwardEmojiRemoveInput;
 };
+
 
 export type MutationAwardEmojiToggleArgs = {
   input: AwardEmojiToggleInput;
 };
 
+
 export type MutationBoardListCreateArgs = {
   input: BoardListCreateInput;
 };
+
 
 export type MutationCiCdSettingsUpdateArgs = {
   input: CiCdSettingsUpdateInput;
 };
 
+
 export type MutationCiJobTokenScopeAddProjectArgs = {
   input: CiJobTokenScopeAddProjectInput;
 };
+
 
 export type MutationCiJobTokenScopeRemoveProjectArgs = {
   input: CiJobTokenScopeRemoveProjectInput;
 };
 
+
 export type MutationClusterAgentDeleteArgs = {
   input: ClusterAgentDeleteInput;
 };
+
 
 export type MutationClusterAgentTokenCreateArgs = {
   input: ClusterAgentTokenCreateInput;
 };
 
+
 export type MutationClusterAgentTokenRevokeArgs = {
   input: ClusterAgentTokenRevokeInput;
 };
+
 
 export type MutationCommitCreateArgs = {
   input: CommitCreateInput;
 };
 
+
 export type MutationConfigureSastArgs = {
   input: ConfigureSastInput;
 };
+
 
 export type MutationConfigureSastIacArgs = {
   input: ConfigureSastIacInput;
 };
 
+
 export type MutationConfigureSecretDetectionArgs = {
   input: ConfigureSecretDetectionInput;
 };
+
 
 export type MutationCreateAlertIssueArgs = {
   input: CreateAlertIssueInput;
 };
 
+
 export type MutationCreateAnnotationArgs = {
   input: CreateAnnotationInput;
 };
+
 
 export type MutationCreateBoardArgs = {
   input: CreateBoardInput;
 };
 
+
 export type MutationCreateBranchArgs = {
   input: CreateBranchInput;
 };
+
 
 export type MutationCreateClusterAgentArgs = {
   input: CreateClusterAgentInput;
 };
 
+
 export type MutationCreateDiffNoteArgs = {
   input: CreateDiffNoteInput;
 };
+
 
 export type MutationCreateImageDiffNoteArgs = {
   input: CreateImageDiffNoteInput;
 };
 
+
 export type MutationCreateIssueArgs = {
   input: CreateIssueInput;
 };
+
 
 export type MutationCreateNoteArgs = {
   input: CreateNoteInput;
 };
 
+
 export type MutationCreateSnippetArgs = {
   input: CreateSnippetInput;
 };
+
 
 export type MutationCustomerRelationsContactCreateArgs = {
   input: CustomerRelationsContactCreateInput;
 };
 
+
 export type MutationCustomerRelationsContactUpdateArgs = {
   input: CustomerRelationsContactUpdateInput;
 };
+
 
 export type MutationCustomerRelationsOrganizationCreateArgs = {
   input: CustomerRelationsOrganizationCreateInput;
 };
 
+
 export type MutationCustomerRelationsOrganizationUpdateArgs = {
   input: CustomerRelationsOrganizationUpdateInput;
 };
+
 
 export type MutationDeleteAnnotationArgs = {
   input: DeleteAnnotationInput;
 };
 
+
 export type MutationDesignManagementDeleteArgs = {
   input: DesignManagementDeleteInput;
 };
+
 
 export type MutationDesignManagementMoveArgs = {
   input: DesignManagementMoveInput;
 };
 
+
 export type MutationDesignManagementUploadArgs = {
   input: DesignManagementUploadInput;
 };
+
 
 export type MutationDestroyBoardArgs = {
   input: DestroyBoardInput;
 };
 
+
 export type MutationDestroyBoardListArgs = {
   input: DestroyBoardListInput;
 };
+
 
 export type MutationDestroyContainerRepositoryArgs = {
   input: DestroyContainerRepositoryInput;
 };
 
+
 export type MutationDestroyContainerRepositoryTagsArgs = {
   input: DestroyContainerRepositoryTagsInput;
 };
+
 
 export type MutationDestroyNoteArgs = {
   input: DestroyNoteInput;
 };
 
+
 export type MutationDestroyPackageArgs = {
   input: DestroyPackageInput;
 };
+
 
 export type MutationDestroyPackageFileArgs = {
   input: DestroyPackageFileInput;
 };
 
+
 export type MutationDestroyPackageFilesArgs = {
   input: DestroyPackageFilesInput;
 };
+
 
 export type MutationDestroySnippetArgs = {
   input: DestroySnippetInput;
 };
 
+
 export type MutationDiscussionToggleResolveArgs = {
   input: DiscussionToggleResolveInput;
 };
+
 
 export type MutationEchoCreateArgs = {
   input: EchoCreateInput;
 };
 
+
 export type MutationEnvironmentsCanaryIngressUpdateArgs = {
   input: EnvironmentsCanaryIngressUpdateInput;
 };
+
 
 export type MutationGroupUpdateArgs = {
   input: GroupUpdateInput;
 };
 
+
 export type MutationHttpIntegrationCreateArgs = {
   input: HttpIntegrationCreateInput;
 };
+
 
 export type MutationHttpIntegrationDestroyArgs = {
   input: HttpIntegrationDestroyInput;
 };
 
+
 export type MutationHttpIntegrationResetTokenArgs = {
   input: HttpIntegrationResetTokenInput;
 };
+
 
 export type MutationHttpIntegrationUpdateArgs = {
   input: HttpIntegrationUpdateInput;
 };
 
+
 export type MutationIssueMoveArgs = {
   input: IssueMoveInput;
 };
+
 
 export type MutationIssueMoveListArgs = {
   input: IssueMoveListInput;
 };
 
+
 export type MutationIssueSetAssigneesArgs = {
   input: IssueSetAssigneesInput;
 };
+
 
 export type MutationIssueSetConfidentialArgs = {
   input: IssueSetConfidentialInput;
 };
 
+
 export type MutationIssueSetCrmContactsArgs = {
   input: IssueSetCrmContactsInput;
 };
+
 
 export type MutationIssueSetDueDateArgs = {
   input: IssueSetDueDateInput;
 };
 
+
 export type MutationIssueSetEscalationStatusArgs = {
   input: IssueSetEscalationStatusInput;
 };
+
 
 export type MutationIssueSetLockedArgs = {
   input: IssueSetLockedInput;
 };
 
+
 export type MutationIssueSetSeverityArgs = {
   input: IssueSetSeverityInput;
 };
+
 
 export type MutationIssueSetSubscriptionArgs = {
   input: IssueSetSubscriptionInput;
 };
 
+
 export type MutationJiraImportStartArgs = {
   input: JiraImportStartInput;
 };
+
 
 export type MutationJiraImportUsersArgs = {
   input: JiraImportUsersInput;
 };
 
+
 export type MutationJobCancelArgs = {
   input: JobCancelInput;
 };
+
 
 export type MutationJobPlayArgs = {
   input: JobPlayInput;
 };
 
+
 export type MutationJobRetryArgs = {
   input: JobRetryInput;
 };
+
 
 export type MutationJobUnscheduleArgs = {
   input: JobUnscheduleInput;
 };
 
+
 export type MutationLabelCreateArgs = {
   input: LabelCreateInput;
 };
+
 
 export type MutationMarkAsSpamSnippetArgs = {
   input: MarkAsSpamSnippetInput;
 };
 
+
 export type MutationMergeRequestAcceptArgs = {
   input: MergeRequestAcceptInput;
 };
+
 
 export type MutationMergeRequestCreateArgs = {
   input: MergeRequestCreateInput;
 };
 
+
 export type MutationMergeRequestRemoveAttentionRequestArgs = {
   input: MergeRequestRemoveAttentionRequestInput;
 };
+
 
 export type MutationMergeRequestRequestAttentionArgs = {
   input: MergeRequestRequestAttentionInput;
 };
 
+
 export type MutationMergeRequestReviewerRereviewArgs = {
   input: MergeRequestReviewerRereviewInput;
 };
+
 
 export type MutationMergeRequestSetAssigneesArgs = {
   input: MergeRequestSetAssigneesInput;
 };
 
+
 export type MutationMergeRequestSetDraftArgs = {
   input: MergeRequestSetDraftInput;
 };
+
 
 export type MutationMergeRequestSetLabelsArgs = {
   input: MergeRequestSetLabelsInput;
 };
 
+
 export type MutationMergeRequestSetLockedArgs = {
   input: MergeRequestSetLockedInput;
 };
+
 
 export type MutationMergeRequestSetMilestoneArgs = {
   input: MergeRequestSetMilestoneInput;
 };
 
+
 export type MutationMergeRequestSetSubscriptionArgs = {
   input: MergeRequestSetSubscriptionInput;
 };
+
 
 export type MutationMergeRequestToggleAttentionRequestedArgs = {
   input: MergeRequestToggleAttentionRequestedInput;
 };
 
+
 export type MutationMergeRequestUpdateArgs = {
   input: MergeRequestUpdateInput;
 };
+
 
 export type MutationPipelineCancelArgs = {
   input: PipelineCancelInput;
 };
 
+
 export type MutationPipelineDestroyArgs = {
   input: PipelineDestroyInput;
 };
+
 
 export type MutationPipelineRetryArgs = {
   input: PipelineRetryInput;
 };
 
+
 export type MutationProjectCiCdSettingsUpdateArgs = {
   input: ProjectCiCdSettingsUpdateInput;
 };
+
 
 export type MutationPrometheusIntegrationCreateArgs = {
   input: PrometheusIntegrationCreateInput;
 };
 
+
 export type MutationPrometheusIntegrationResetTokenArgs = {
   input: PrometheusIntegrationResetTokenInput;
 };
+
 
 export type MutationPrometheusIntegrationUpdateArgs = {
   input: PrometheusIntegrationUpdateInput;
 };
 
+
 export type MutationReleaseAssetLinkCreateArgs = {
   input: ReleaseAssetLinkCreateInput;
 };
+
 
 export type MutationReleaseAssetLinkDeleteArgs = {
   input: ReleaseAssetLinkDeleteInput;
 };
 
+
 export type MutationReleaseAssetLinkUpdateArgs = {
   input: ReleaseAssetLinkUpdateInput;
 };
+
 
 export type MutationReleaseCreateArgs = {
   input: ReleaseCreateInput;
 };
 
+
 export type MutationReleaseDeleteArgs = {
   input: ReleaseDeleteInput;
 };
+
 
 export type MutationReleaseUpdateArgs = {
   input: ReleaseUpdateInput;
 };
 
+
 export type MutationRepositionImageDiffNoteArgs = {
   input: RepositionImageDiffNoteInput;
 };
+
 
 export type MutationRunnerDeleteArgs = {
   input: RunnerDeleteInput;
 };
 
+
 export type MutationRunnerUpdateArgs = {
   input: RunnerUpdateInput;
 };
+
 
 export type MutationRunnersRegistrationTokenResetArgs = {
   input: RunnersRegistrationTokenResetInput;
 };
 
+
 export type MutationSavedReplyCreateArgs = {
   input: SavedReplyCreateInput;
 };
+
 
 export type MutationSavedReplyDestroyArgs = {
   input: SavedReplyDestroyInput;
 };
 
+
 export type MutationSavedReplyUpdateArgs = {
   input: SavedReplyUpdateInput;
 };
+
 
 export type MutationTerraformStateDeleteArgs = {
   input: TerraformStateDeleteInput;
 };
 
+
 export type MutationTerraformStateLockArgs = {
   input: TerraformStateLockInput;
 };
+
 
 export type MutationTerraformStateUnlockArgs = {
   input: TerraformStateUnlockInput;
 };
 
+
 export type MutationTimelineEventCreateArgs = {
   input: TimelineEventCreateInput;
 };
+
 
 export type MutationTimelineEventDestroyArgs = {
   input: TimelineEventDestroyInput;
 };
 
+
 export type MutationTimelineEventPromoteFromNoteArgs = {
   input: TimelineEventPromoteFromNoteInput;
 };
+
 
 export type MutationTimelineEventUpdateArgs = {
   input: TimelineEventUpdateInput;
 };
 
+
 export type MutationTimelogDeleteArgs = {
   input: TimelogDeleteInput;
 };
+
 
 export type MutationTodoCreateArgs = {
   input: TodoCreateInput;
 };
 
+
 export type MutationTodoMarkDoneArgs = {
   input: TodoMarkDoneInput;
 };
+
 
 export type MutationTodoRestoreArgs = {
   input: TodoRestoreInput;
 };
 
+
 export type MutationTodoRestoreManyArgs = {
   input: TodoRestoreManyInput;
 };
+
 
 export type MutationTodosMarkAllDoneArgs = {
   input: TodosMarkAllDoneInput;
 };
 
+
 export type MutationUpdateAlertStatusArgs = {
   input: UpdateAlertStatusInput;
 };
+
 
 export type MutationUpdateBoardArgs = {
   input: UpdateBoardInput;
 };
 
+
 export type MutationUpdateBoardListArgs = {
   input: UpdateBoardListInput;
 };
+
 
 export type MutationUpdateContainerExpirationPolicyArgs = {
   input: UpdateContainerExpirationPolicyInput;
 };
 
+
 export type MutationUpdateDependencyProxyImageTtlGroupPolicyArgs = {
   input: UpdateDependencyProxyImageTtlGroupPolicyInput;
 };
+
 
 export type MutationUpdateDependencyProxySettingsArgs = {
   input: UpdateDependencyProxySettingsInput;
 };
 
+
 export type MutationUpdateImageDiffNoteArgs = {
   input: UpdateImageDiffNoteInput;
 };
+
 
 export type MutationUpdateIssueArgs = {
   input: UpdateIssueInput;
 };
 
+
 export type MutationUpdateNamespacePackageSettingsArgs = {
   input: UpdateNamespacePackageSettingsInput;
 };
+
 
 export type MutationUpdateNoteArgs = {
   input: UpdateNoteInput;
 };
 
+
 export type MutationUpdatePackagesCleanupPolicyArgs = {
   input: UpdatePackagesCleanupPolicyInput;
 };
+
 
 export type MutationUpdateSnippetArgs = {
   input: UpdateSnippetInput;
 };
 
+
 export type MutationUserCalloutCreateArgs = {
   input: UserCalloutCreateInput;
 };
+
 
 export type MutationUserPreferencesUpdateArgs = {
   input: UserPreferencesUpdateInput;
 };
 
+
 export type MutationWorkItemCreateArgs = {
   input: WorkItemCreateInput;
 };
+
 
 export type MutationWorkItemCreateFromTaskArgs = {
   input: WorkItemCreateFromTaskInput;
 };
 
+
 export type MutationWorkItemDeleteArgs = {
   input: WorkItemDeleteInput;
 };
+
 
 export type MutationWorkItemDeleteTaskArgs = {
   input: WorkItemDeleteTaskInput;
 };
 
+
 export type MutationWorkItemUpdateArgs = {
   input: WorkItemUpdateInput;
 };
 
+
 export type MutationWorkItemUpdateTaskArgs = {
   input: WorkItemUpdateTaskInput;
 };
+
 
 export type MutationWorkItemUpdateWidgetsArgs = {
   input: WorkItemUpdateWidgetsInput;
@@ -8807,6 +9084,7 @@ export type Namespace = {
   /** Visibility of the namespace. */
   visibility?: Maybe<Scalars['String']>;
 };
+
 
 export type NamespaceProjectsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -8962,12 +9240,14 @@ export type NoteableInterface = {
   notes: NoteConnection;
 };
 
+
 export type NoteableInterfaceDiscussionsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type NoteableInterfaceNotesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -9030,6 +9310,7 @@ export type Package = {
   version?: Maybe<Scalars['String']>;
 };
 
+
 /** Represents a package with pipelines in the Package Registry */
 export type PackagePipelinesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -9037,6 +9318,7 @@ export type PackagePipelinesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** Represents a package with pipelines in the Package Registry */
 export type PackageTagsArgs = {
@@ -9072,6 +9354,7 @@ export type PackageBase = {
   /** Version string. */
   version?: Maybe<Scalars['String']>;
 };
+
 
 /** Represents a package in the Package Registry */
 export type PackageBaseTagsArgs = {
@@ -9235,6 +9518,7 @@ export type PackageDetailsType = {
   versions?: Maybe<PackageBaseConnection>;
 };
 
+
 /** Represents a package details in the Package Registry */
 export type PackageDetailsTypeDependencyLinksArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -9242,6 +9526,7 @@ export type PackageDetailsTypeDependencyLinksArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** Represents a package details in the Package Registry */
 export type PackageDetailsTypePackageFilesArgs = {
@@ -9251,6 +9536,7 @@ export type PackageDetailsTypePackageFilesArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 /** Represents a package details in the Package Registry */
 export type PackageDetailsTypePipelinesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -9259,6 +9545,7 @@ export type PackageDetailsTypePipelinesArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 /** Represents a package details in the Package Registry */
 export type PackageDetailsTypeTagsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -9266,6 +9553,7 @@ export type PackageDetailsTypeTagsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** Represents a package details in the Package Registry */
 export type PackageDetailsTypeVersionsArgs = {
@@ -9664,6 +9952,7 @@ export type Pipeline = {
   warnings: Scalars['Boolean'];
 };
 
+
 export type PipelineDownstreamArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -9671,10 +9960,12 @@ export type PipelineDownstreamArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 export type PipelineJobArgs = {
   id?: InputMaybe<Scalars['JobID']>;
   name?: InputMaybe<Scalars['String']>;
 };
+
 
 export type PipelineJobsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -9685,9 +9976,11 @@ export type PipelineJobsArgs = {
   statuses?: InputMaybe<Array<CiJobStatus>>;
 };
 
+
 export type PipelineShaArgs = {
   format?: InputMaybe<ShaFormat>;
 };
+
 
 export type PipelineStagesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -9695,6 +9988,7 @@ export type PipelineStagesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type PipelineTestSuiteArgs = {
   buildIds: Array<Scalars['ID']>;
@@ -10113,12 +10407,14 @@ export type Project = {
   workItems?: Maybe<WorkItemConnection>;
 };
 
+
 export type ProjectAgentConfigurationsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type ProjectAlertManagementAlertArgs = {
   assigneeUsername?: InputMaybe<Scalars['String']>;
@@ -10129,10 +10425,12 @@ export type ProjectAlertManagementAlertArgs = {
   statuses?: InputMaybe<Array<AlertManagementStatus>>;
 };
 
+
 export type ProjectAlertManagementAlertStatusCountsArgs = {
   assigneeUsername?: InputMaybe<Scalars['String']>;
   search?: InputMaybe<Scalars['String']>;
 };
+
 
 export type ProjectAlertManagementAlertsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -10147,6 +10445,7 @@ export type ProjectAlertManagementAlertsArgs = {
   statuses?: InputMaybe<Array<AlertManagementStatus>>;
 };
 
+
 export type ProjectAlertManagementHttpIntegrationsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -10154,6 +10453,7 @@ export type ProjectAlertManagementHttpIntegrationsArgs = {
   id?: InputMaybe<Scalars['AlertManagementHttpIntegrationID']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type ProjectAlertManagementIntegrationsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -10163,9 +10463,11 @@ export type ProjectAlertManagementIntegrationsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 export type ProjectBoardArgs = {
   id: Scalars['BoardID'];
 };
+
 
 export type ProjectBoardsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -10175,13 +10477,16 @@ export type ProjectBoardsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 export type ProjectCiTemplateArgs = {
   name: Scalars['String'];
 };
 
+
 export type ProjectClusterAgentArgs = {
   name: Scalars['String'];
 };
+
 
 export type ProjectClusterAgentsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -10189,6 +10494,7 @@ export type ProjectClusterAgentsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type ProjectContainerRepositoriesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -10199,11 +10505,13 @@ export type ProjectContainerRepositoriesArgs = {
   sort?: InputMaybe<ContainerRepositorySort>;
 };
 
+
 export type ProjectEnvironmentArgs = {
   name?: InputMaybe<Scalars['String']>;
   search?: InputMaybe<Scalars['String']>;
   states?: InputMaybe<Array<Scalars['String']>>;
 };
+
 
 export type ProjectEnvironmentsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -10215,10 +10523,12 @@ export type ProjectEnvironmentsArgs = {
   states?: InputMaybe<Array<Scalars['String']>>;
 };
 
+
 export type ProjectIncidentManagementTimelineEventArgs = {
   id: Scalars['IncidentManagementTimelineEventID'];
   incidentId: Scalars['IssueID'];
 };
+
 
 export type ProjectIncidentManagementTimelineEventsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -10227,6 +10537,7 @@ export type ProjectIncidentManagementTimelineEventsArgs = {
   incidentId: Scalars['IssueID'];
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type ProjectIssueArgs = {
   assigneeId?: InputMaybe<Scalars['String']>;
@@ -10256,6 +10567,7 @@ export type ProjectIssueArgs = {
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
 
+
 export type ProjectIssueStatusCountsArgs = {
   assigneeId?: InputMaybe<Scalars['String']>;
   assigneeUsernames?: InputMaybe<Array<Scalars['String']>>;
@@ -10281,6 +10593,7 @@ export type ProjectIssueStatusCountsArgs = {
   updatedAfter?: InputMaybe<Scalars['Time']>;
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
+
 
 export type ProjectIssuesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -10314,12 +10627,14 @@ export type ProjectIssuesArgs = {
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
 
+
 export type ProjectJiraImportsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type ProjectJobsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -10329,9 +10644,11 @@ export type ProjectJobsArgs = {
   statuses?: InputMaybe<Array<CiJobStatus>>;
 };
 
+
 export type ProjectLabelArgs = {
   title: Scalars['String'];
 };
+
 
 export type ProjectLabelsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -10342,9 +10659,11 @@ export type ProjectLabelsArgs = {
   searchTerm?: InputMaybe<Scalars['String']>;
 };
 
+
 export type ProjectMergeRequestArgs = {
   iid: Scalars['String'];
 };
+
 
 export type ProjectMergeRequestsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -10371,6 +10690,7 @@ export type ProjectMergeRequestsArgs = {
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
 
+
 export type ProjectMilestonesArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -10386,6 +10706,7 @@ export type ProjectMilestonesArgs = {
   title?: InputMaybe<Scalars['String']>;
 };
 
+
 export type ProjectPackagesArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -10398,16 +10719,19 @@ export type ProjectPackagesArgs = {
   status?: InputMaybe<PackageStatus>;
 };
 
+
 export type ProjectPipelineArgs = {
   iid?: InputMaybe<Scalars['ID']>;
   sha?: InputMaybe<Scalars['String']>;
 };
+
 
 export type ProjectPipelineCountsArgs = {
   ref?: InputMaybe<Scalars['String']>;
   sha?: InputMaybe<Scalars['String']>;
   source?: InputMaybe<Scalars['String']>;
 };
+
 
 export type ProjectPipelinesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -10424,6 +10748,7 @@ export type ProjectPipelinesArgs = {
   username?: InputMaybe<Scalars['String']>;
 };
 
+
 export type ProjectProjectMembersArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -10433,6 +10758,7 @@ export type ProjectProjectMembersArgs = {
   search?: InputMaybe<Scalars['String']>;
 };
 
+
 export type ProjectRecentIssueBoardsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -10440,9 +10766,11 @@ export type ProjectRecentIssueBoardsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 export type ProjectReleaseArgs = {
   tagName: Scalars['String'];
 };
+
 
 export type ProjectReleasesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -10452,9 +10780,11 @@ export type ProjectReleasesArgs = {
   sort?: InputMaybe<ReleaseSort>;
 };
 
+
 export type ProjectSentryDetailedErrorArgs = {
   id: Scalars['GitlabErrorTrackingDetailedErrorID'];
 };
+
 
 export type ProjectServicesArgs = {
   active?: InputMaybe<Scalars['Boolean']>;
@@ -10465,6 +10795,7 @@ export type ProjectServicesArgs = {
   type?: InputMaybe<ServiceType>;
 };
 
+
 export type ProjectSnippetsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -10474,9 +10805,11 @@ export type ProjectSnippetsArgs = {
   visibility?: InputMaybe<VisibilityScopesEnum>;
 };
 
+
 export type ProjectTerraformStateArgs = {
   name: Scalars['String'];
 };
+
 
 export type ProjectTerraformStatesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -10484,6 +10817,7 @@ export type ProjectTerraformStatesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type ProjectTimelogsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -10499,6 +10833,7 @@ export type ProjectTimelogsArgs = {
   username?: InputMaybe<Scalars['String']>;
 };
 
+
 export type ProjectWorkItemTypesArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -10506,6 +10841,7 @@ export type ProjectWorkItemTypesArgs = {
   last?: InputMaybe<Scalars['Int']>;
   taskable?: InputMaybe<Scalars['Boolean']>;
 };
+
 
 export type ProjectWorkItemsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -10603,6 +10939,7 @@ export type ProjectMember = MemberInterface & {
   /** Permissions for the current user on the resource */
   userPermissions: ProjectPermissions;
 };
+
 
 /** Represents a Project Membership */
 export type ProjectMemberMergeRequestInteractionArgs = {
@@ -10906,10 +11243,12 @@ export type Query = {
   workItem?: Maybe<WorkItem>;
 };
 
+
 export type QueryBoardListArgs = {
   id: Scalars['ListID'];
   issueFilters?: InputMaybe<BoardIssueInput>;
 };
+
 
 export type QueryCiConfigArgs = {
   content: Scalars['String'];
@@ -10918,41 +11257,51 @@ export type QueryCiConfigArgs = {
   sha?: InputMaybe<Scalars['String']>;
 };
 
+
 export type QueryContainerRepositoryArgs = {
   id: Scalars['ContainerRepositoryID'];
 };
+
 
 export type QueryEchoArgs = {
   text: Scalars['String'];
 };
 
+
 export type QueryGroupArgs = {
   fullPath: Scalars['ID'];
 };
+
 
 export type QueryIssueArgs = {
   id: Scalars['IssueID'];
 };
 
+
 export type QueryMergeRequestArgs = {
   id: Scalars['MergeRequestID'];
 };
+
 
 export type QueryMilestoneArgs = {
   id: Scalars['MilestoneID'];
 };
 
+
 export type QueryNamespaceArgs = {
   fullPath: Scalars['ID'];
 };
+
 
 export type QueryPackageArgs = {
   id: Scalars['PackagesPackageID'];
 };
 
+
 export type QueryProjectArgs = {
   fullPath: Scalars['ID'];
 };
+
 
 export type QueryProjectsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -10967,9 +11316,11 @@ export type QueryProjectsArgs = {
   topics?: InputMaybe<Array<Scalars['String']>>;
 };
 
+
 export type QueryRunnerArgs = {
   id: Scalars['CiRunnerID'];
 };
+
 
 export type QueryRunnerPlatformsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -10978,10 +11329,12 @@ export type QueryRunnerPlatformsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 export type QueryRunnerSetupArgs = {
   architecture: Scalars['String'];
   platform: Scalars['String'];
 };
+
 
 export type QueryRunnersArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -10996,6 +11349,7 @@ export type QueryRunnersArgs = {
   type?: InputMaybe<CiRunnerType>;
 };
 
+
 export type QuerySnippetsArgs = {
   after?: InputMaybe<Scalars['String']>;
   authorId?: InputMaybe<Scalars['UserID']>;
@@ -11008,6 +11362,7 @@ export type QuerySnippetsArgs = {
   type?: InputMaybe<TypeEnum>;
   visibility?: InputMaybe<VisibilityScopesEnum>;
 };
+
 
 export type QueryTimelogsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -11023,6 +11378,7 @@ export type QueryTimelogsArgs = {
   username?: InputMaybe<Scalars['String']>;
 };
 
+
 export type QueryTopicsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -11030,6 +11386,7 @@ export type QueryTopicsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   search?: InputMaybe<Scalars['String']>;
 };
+
 
 export type QueryUsageTrendsMeasurementsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -11041,10 +11398,12 @@ export type QueryUsageTrendsMeasurementsArgs = {
   recordedBefore?: InputMaybe<Scalars['Time']>;
 };
 
+
 export type QueryUserArgs = {
   id?: InputMaybe<Scalars['UserID']>;
   username?: InputMaybe<Scalars['String']>;
 };
+
 
 export type QueryUsersArgs = {
   admins?: InputMaybe<Scalars['Boolean']>;
@@ -11057,6 +11416,7 @@ export type QueryUsersArgs = {
   sort?: InputMaybe<Sort>;
   usernames?: InputMaybe<Array<Scalars['String']>>;
 };
+
 
 export type QueryWorkItemArgs = {
   id: Scalars['WorkItemID'];
@@ -11114,6 +11474,7 @@ export type Release = {
   upcomingRelease?: Maybe<Scalars['Boolean']>;
 };
 
+
 /** Represents a release */
 export type ReleaseEvidencesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -11121,6 +11482,7 @@ export type ReleaseEvidencesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** Represents a release */
 export type ReleaseMilestonesArgs = {
@@ -11279,6 +11641,7 @@ export type ReleaseAssets = {
   sources?: Maybe<ReleaseSourceConnection>;
 };
 
+
 /** A container for all assets associated with a release */
 export type ReleaseAssetsLinksArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -11286,6 +11649,7 @@ export type ReleaseAssetsLinksArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** A container for all assets associated with a release */
 export type ReleaseAssetsSourcesArgs = {
@@ -11549,6 +11913,7 @@ export type Repository = {
   tree?: Maybe<Tree>;
 };
 
+
 export type RepositoryBlobsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -11558,11 +11923,13 @@ export type RepositoryBlobsArgs = {
   ref?: InputMaybe<Scalars['String']>;
 };
 
+
 export type RepositoryBranchNamesArgs = {
   limit: Scalars['Int'];
   offset: Scalars['Int'];
   searchPattern: Scalars['String'];
 };
+
 
 export type RepositoryPaginatedTreeArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -11573,6 +11940,7 @@ export type RepositoryPaginatedTreeArgs = {
   recursive?: InputMaybe<Scalars['Boolean']>;
   ref?: InputMaybe<Scalars['String']>;
 };
+
 
 export type RepositoryTreeArgs = {
   path?: InputMaybe<Scalars['String']>;
@@ -11792,6 +12160,7 @@ export type RunnerPlatform = {
   name: Scalars['String'];
 };
 
+
 export type RunnerPlatformArchitecturesArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -11894,6 +12263,7 @@ export type SastCiConfiguration = {
   pipeline?: Maybe<SastCiConfigurationEntityConnection>;
 };
 
+
 /** Represents a CI configuration of SAST */
 export type SastCiConfigurationAnalyzersArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -11902,6 +12272,7 @@ export type SastCiConfigurationAnalyzersArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 /** Represents a CI configuration of SAST */
 export type SastCiConfigurationGlobalArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -11909,6 +12280,7 @@ export type SastCiConfigurationGlobalArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** Represents a CI configuration of SAST */
 export type SastCiConfigurationPipelineArgs = {
@@ -11932,6 +12304,7 @@ export type SastCiConfigurationAnalyzersEntity = {
   /** List of supported variables. */
   variables?: Maybe<SastCiConfigurationEntityConnection>;
 };
+
 
 /** Represents an analyzer entity in SAST CI configuration */
 export type SastCiConfigurationAnalyzersEntityVariablesArgs = {
@@ -11991,6 +12364,7 @@ export type SastCiConfigurationEntity = {
   /** Current value of the entity. */
   value?: Maybe<Scalars['String']>;
 };
+
 
 /** Represents an entity in SAST CI configuration */
 export type SastCiConfigurationEntityOptionsArgs = {
@@ -12308,15 +12682,18 @@ export type SentryErrorCollection = {
   externalUrl?: Maybe<Scalars['String']>;
 };
 
+
 /** An object containing a collection of Sentry errors, and a detailed error */
 export type SentryErrorCollectionDetailedErrorArgs = {
   id: Scalars['GitlabErrorTrackingDetailedErrorID'];
 };
 
+
 /** An object containing a collection of Sentry errors, and a detailed error */
 export type SentryErrorCollectionErrorStackTraceArgs = {
   id: Scalars['GitlabErrorTrackingDetailedErrorID'];
 };
+
 
 /** An object containing a collection of Sentry errors, and a detailed error */
 export type SentryErrorCollectionErrorsArgs = {
@@ -12576,6 +12953,7 @@ export type Snippet = NoteableInterface & {
   webUrl: Scalars['String'];
 };
 
+
 /** Represents a snippet entry */
 export type SnippetBlobsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -12585,6 +12963,7 @@ export type SnippetBlobsArgs = {
   paths?: InputMaybe<Array<Scalars['String']>>;
 };
 
+
 /** Represents a snippet entry */
 export type SnippetDiscussionsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -12592,6 +12971,7 @@ export type SnippetDiscussionsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** Represents a snippet entry */
 export type SnippetNotesArgs = {
@@ -12833,17 +13213,21 @@ export type Subscription = {
   issueCrmContactsUpdated?: Maybe<Issuable>;
 };
 
+
 export type SubscriptionIssuableAssigneesUpdatedArgs = {
   issuableId: Scalars['IssuableID'];
 };
+
 
 export type SubscriptionIssuableLabelsUpdatedArgs = {
   issuableId: Scalars['IssuableID'];
 };
 
+
 export type SubscriptionIssuableTitleUpdatedArgs = {
   issuableId: Scalars['IssuableID'];
 };
+
 
 export type SubscriptionIssueCrmContactsUpdatedArgs = {
   issuableId: Scalars['IssuableID'];
@@ -13034,6 +13418,7 @@ export type TestReportSummary = {
   total: TestReportTotal;
 };
 
+
 /** Test report for a pipeline */
 export type TestReportSummaryTestSuitesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -13083,6 +13468,7 @@ export type TestSuite = {
   /** Total duration of the tests in the test suite. */
   totalTime?: Maybe<Scalars['Float']>;
 };
+
 
 /** Test suite in a pipeline test report. */
 export type TestSuiteTestCasesArgs = {
@@ -13581,6 +13967,7 @@ export type Tree = {
   trees: TreeEntryConnection;
 };
 
+
 export type TreeBlobsArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
@@ -13588,12 +13975,14 @@ export type TreeBlobsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 export type TreeSubmodulesArgs = {
   after?: InputMaybe<Scalars['String']>;
   before?: InputMaybe<Scalars['String']>;
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 export type TreeTreesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14091,6 +14480,7 @@ export type User = {
   webUrl: Scalars['String'];
 };
 
+
 /** Representation of a GitLab user. */
 export type UserAssignedMergeRequestsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14117,6 +14507,7 @@ export type UserAssignedMergeRequestsArgs = {
   updatedAfter?: InputMaybe<Scalars['Time']>;
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
+
 
 /** Representation of a GitLab user. */
 export type UserAuthoredMergeRequestsArgs = {
@@ -14145,6 +14536,7 @@ export type UserAuthoredMergeRequestsArgs = {
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
 
+
 /** Representation of a GitLab user. */
 export type UserCalloutsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14153,6 +14545,7 @@ export type UserCalloutsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 /** Representation of a GitLab user. */
 export type UserGroupMembershipsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14160,6 +14553,7 @@ export type UserGroupMembershipsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** Representation of a GitLab user. */
 export type UserGroupsArgs = {
@@ -14171,6 +14565,7 @@ export type UserGroupsArgs = {
   search?: InputMaybe<Scalars['String']>;
 };
 
+
 /** Representation of a GitLab user. */
 export type UserProjectMembershipsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14178,6 +14573,7 @@ export type UserProjectMembershipsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** Representation of a GitLab user. */
 export type UserReviewRequestedMergeRequestsArgs = {
@@ -14206,6 +14602,7 @@ export type UserReviewRequestedMergeRequestsArgs = {
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
 
+
 /** Representation of a GitLab user. */
 export type UserSavedRepliesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14213,6 +14610,7 @@ export type UserSavedRepliesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** Representation of a GitLab user. */
 export type UserSnippetsArgs = {
@@ -14225,6 +14623,7 @@ export type UserSnippetsArgs = {
   visibility?: InputMaybe<VisibilityScopesEnum>;
 };
 
+
 /** Representation of a GitLab user. */
 export type UserStarredProjectsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14233,6 +14632,7 @@ export type UserStarredProjectsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   search?: InputMaybe<Scalars['String']>;
 };
+
 
 /** Representation of a GitLab user. */
 export type UserTimelogsArgs = {
@@ -14248,6 +14648,7 @@ export type UserTimelogsArgs = {
   startTime?: InputMaybe<Scalars['Time']>;
   username?: InputMaybe<Scalars['String']>;
 };
+
 
 /** Representation of a GitLab user. */
 export type UserTodosArgs = {
@@ -14476,6 +14877,7 @@ export type UserCore = User & {
   webUrl: Scalars['String'];
 };
 
+
 /** Core represention of a GitLab user. */
 export type UserCoreAssignedMergeRequestsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14502,6 +14904,7 @@ export type UserCoreAssignedMergeRequestsArgs = {
   updatedAfter?: InputMaybe<Scalars['Time']>;
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
+
 
 /** Core represention of a GitLab user. */
 export type UserCoreAuthoredMergeRequestsArgs = {
@@ -14530,6 +14933,7 @@ export type UserCoreAuthoredMergeRequestsArgs = {
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
 
+
 /** Core represention of a GitLab user. */
 export type UserCoreCalloutsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14538,6 +14942,7 @@ export type UserCoreCalloutsArgs = {
   last?: InputMaybe<Scalars['Int']>;
 };
 
+
 /** Core represention of a GitLab user. */
 export type UserCoreGroupMembershipsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14545,6 +14950,7 @@ export type UserCoreGroupMembershipsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** Core represention of a GitLab user. */
 export type UserCoreGroupsArgs = {
@@ -14556,6 +14962,7 @@ export type UserCoreGroupsArgs = {
   search?: InputMaybe<Scalars['String']>;
 };
 
+
 /** Core represention of a GitLab user. */
 export type UserCoreProjectMembershipsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14563,6 +14970,7 @@ export type UserCoreProjectMembershipsArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** Core represention of a GitLab user. */
 export type UserCoreReviewRequestedMergeRequestsArgs = {
@@ -14591,6 +14999,7 @@ export type UserCoreReviewRequestedMergeRequestsArgs = {
   updatedBefore?: InputMaybe<Scalars['Time']>;
 };
 
+
 /** Core represention of a GitLab user. */
 export type UserCoreSavedRepliesArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14598,6 +15007,7 @@ export type UserCoreSavedRepliesArgs = {
   first?: InputMaybe<Scalars['Int']>;
   last?: InputMaybe<Scalars['Int']>;
 };
+
 
 /** Core represention of a GitLab user. */
 export type UserCoreSnippetsArgs = {
@@ -14610,6 +15020,7 @@ export type UserCoreSnippetsArgs = {
   visibility?: InputMaybe<VisibilityScopesEnum>;
 };
 
+
 /** Core represention of a GitLab user. */
 export type UserCoreStarredProjectsArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -14618,6 +15029,7 @@ export type UserCoreStarredProjectsArgs = {
   last?: InputMaybe<Scalars['Int']>;
   search?: InputMaybe<Scalars['String']>;
 };
+
 
 /** Core represention of a GitLab user. */
 export type UserCoreTimelogsArgs = {
@@ -14633,6 +15045,7 @@ export type UserCoreTimelogsArgs = {
   startTime?: InputMaybe<Scalars['Time']>;
   username?: InputMaybe<Scalars['String']>;
 };
+
 
 /** Core represention of a GitLab user. */
 export type UserCoreTodosArgs = {
@@ -15118,6 +15531,7 @@ export type WorkItemWidgetHierarchy = WorkItemWidget & {
   type?: Maybe<WorkItemWidgetType>;
 };
 
+
 /** Represents a hierarchy widget */
 export type WorkItemWidgetHierarchyChildrenArgs = {
   after?: InputMaybe<Scalars['String']>;
@@ -15136,6 +15550,8 @@ export enum WorkItemWidgetType {
 
 export type MainQueryVariables = Exact<{ [key: string]: never; }>;
 
+
 export type MainQuery = { __typename?: 'Query', project?: { __typename?: 'Project', mergeRequests?: { __typename?: 'MergeRequestConnection', nodes?: Array<{ __typename?: 'MergeRequest', id: string, title: string, webUrl?: string | null, author?: { __typename?: 'MergeRequestAuthor', avatarUrl?: string | null, name: string, publicEmail?: string | null } | null, commits?: { __typename?: 'CommitConnection', nodes?: Array<{ __typename?: 'Commit', message?: string | null } | null> | null } | null, participants?: { __typename?: 'MergeRequestParticipantConnection', nodes?: Array<{ __typename?: 'MergeRequestParticipant', avatarUrl?: string | null, name: string, publicEmail?: string | null } | null> | null } | null } | null> | null } | null } | null };
 
-export const MainDocument = { kind: 'Document', definitions: [{ kind: 'OperationDefinition', operation: 'query', name: { kind: 'Name', value: 'Main' }, selectionSet: { kind: 'SelectionSet', selections: [{ kind: 'Field', name: { kind: 'Name', value: 'project' }, arguments: [{ kind: 'Argument', name: { kind: 'Name', value: 'fullPath' }, value: { kind: 'StringValue', value: 'mesa/mesa', block: false } }], selectionSet: { kind: 'SelectionSet', selections: [{ kind: 'Field', name: { kind: 'Name', value: 'mergeRequests' }, arguments: [{ kind: 'Argument', name: { kind: 'Name', value: 'labels' }, value: { kind: 'ListValue', values: [{ kind: 'StringValue', value: 'RADV', block: false }] } }, { kind: 'Argument', name: { kind: 'Name', value: 'sort' }, value: { kind: 'EnumValue', value: 'UPDATED_DESC' } }, { kind: 'Argument', name: { kind: 'Name', value: 'state' }, value: { kind: 'EnumValue', value: 'opened' } }], selectionSet: { kind: 'SelectionSet', selections: [{ kind: 'Field', name: { kind: 'Name', value: 'nodes' }, selectionSet: { kind: 'SelectionSet', selections: [{ kind: 'Field', name: { kind: 'Name', value: 'id' } }, { kind: 'Field', name: { kind: 'Name', value: 'title' } }, { kind: 'Field', name: { kind: 'Name', value: 'author' }, selectionSet: { kind: 'SelectionSet', selections: [{ kind: 'Field', name: { kind: 'Name', value: 'avatarUrl' } }, { kind: 'Field', name: { kind: 'Name', value: 'name' } }, { kind: 'Field', name: { kind: 'Name', value: 'publicEmail' } }] } }, { kind: 'Field', name: { kind: 'Name', value: 'commits' }, selectionSet: { kind: 'SelectionSet', selections: [{ kind: 'Field', name: { kind: 'Name', value: 'nodes' }, selectionSet: { kind: 'SelectionSet', selections: [{ kind: 'Field', name: { kind: 'Name', value: 'message' } }] } }] } }, { kind: 'Field', name: { kind: 'Name', value: 'participants' }, selectionSet: { kind: 'SelectionSet', selections: [{ kind: 'Field', name: { kind: 'Name', value: 'nodes' }, selectionSet: { kind: 'SelectionSet', selections: [{ kind: 'Field', name: { kind: 'Name', value: 'avatarUrl' } }, { kind: 'Field', name: { kind: 'Name', value: 'name' } }, { kind: 'Field', name: { kind: 'Name', value: 'publicEmail' } }] } }] } }, { kind: 'Field', name: { kind: 'Name', value: 'webUrl' } }] } }] } }] } }] } }] } as unknown as DocumentNode<MainQuery, MainQueryVariables>
+
+export const MainDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"Main"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"project"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"fullPath"},"value":{"kind":"StringValue","value":"mesa/mesa","block":false}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"mergeRequests"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"labels"},"value":{"kind":"ListValue","values":[{"kind":"StringValue","value":"RADV","block":false}]}},{"kind":"Argument","name":{"kind":"Name","value":"sort"},"value":{"kind":"EnumValue","value":"UPDATED_DESC"}},{"kind":"Argument","name":{"kind":"Name","value":"state"},"value":{"kind":"EnumValue","value":"opened"}},{"kind":"Argument","name":{"kind":"Name","value":"first"},"value":{"kind":"IntValue","value":"20"}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"nodes"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"title"}},{"kind":"Field","name":{"kind":"Name","value":"author"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"avatarUrl"}},{"kind":"Field","name":{"kind":"Name","value":"name"}},{"kind":"Field","name":{"kind":"Name","value":"publicEmail"}}]}},{"kind":"Field","name":{"kind":"Name","value":"commits"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"nodes"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"message"}}]}}]}},{"kind":"Field","name":{"kind":"Name","value":"participants"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"nodes"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"avatarUrl"}},{"kind":"Field","name":{"kind":"Name","value":"name"}},{"kind":"Field","name":{"kind":"Name","value":"publicEmail"}}]}}]}},{"kind":"Field","name":{"kind":"Name","value":"webUrl"}}]}}]}}]}}]}}]} as unknown as DocumentNode<MainQuery, MainQueryVariables>;

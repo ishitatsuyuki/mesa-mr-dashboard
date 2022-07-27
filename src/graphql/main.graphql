@@ -1,6 +1,6 @@
 query Main {
   project(fullPath: "mesa/mesa") {
-    mergeRequests(labels: ["RADV"], sort: UPDATED_DESC, state: opened) {
+    mergeRequests(labels: ["RADV"], sort: UPDATED_DESC, state: opened, first: 20) {
       nodes {
         id
         title
