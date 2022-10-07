@@ -25,19 +25,46 @@ const { result } = useQuery(MainDocument)
 
     <v-main>
       <v-card>
-        <v-list lines="two">
-          <v-list-item v-for="mr of result?.project?.mergeRequests?.nodes || []" :key="mr!.id" :href="mr!.webUrl!" target="_blank">
-            <v-list-item-header>
-            <v-list-item-title>{{ mr!.title }}</v-list-item-title>
-            <v-list-item-subtitle>
-              by
+        <div class="table">
+          <div class="header">Title</div>
+          <div class="header">Author</div>
+          <div class="header">Approval</div>
+          <template v-for="mr of result?.project?.mergeRequests?.nodes || []" :key="mr!.id">
+            <a class="title" :href="mr!.webUrl!"
+               target="_blank">{{ mr!.title }}</a>
+            <div>
               {{ mr!.author!.name }}
-            </v-list-item-subtitle>
-              <rb-count :mr="mr"></rb-count>
-            </v-list-item-header>
-          </v-list-item>
-        </v-list>
+            </div>
+            <rb-count :mr="mr"></rb-count>
+          </template>
+        </div>
       </v-card>
     </v-main>
   </v-app>
 </template>
+
+<style scoped>
+.table {
+  display: grid;
+  grid-template-columns: 1fr 32ch 10ch;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.header {
+  background-color: #fafafa;
+  color: #424242;
+}
+.title {
+  color: inherit;
+  text-decoration: none;
+}
+.title:hover, .title:focus {
+  text-decoration: underline;
+}
+.table * {
+  padding: 3px 8px;
+}
+.table *:not(.last-row) {
+  border-bottom: 1px solid #bdbdbd;
+}
+</style>

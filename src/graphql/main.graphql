@@ -1,12 +1,13 @@
 query Main {
   project(fullPath: "mesa/mesa") {
-    mergeRequests(labels: ["RADV"], sort: UPDATED_DESC, state: opened, first: 20) {
+    mergeRequests(labels: ["RADV"], sort: UPDATED_DESC, state: opened, first: 30) {
       nodes {
         id
         title
         author {
           avatarUrl
           name
+          username
           publicEmail
         }
         commits {
